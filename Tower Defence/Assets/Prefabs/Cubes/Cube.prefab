@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 883236198896900508}
   - component: {fileID: 7966293014458318190}
   - component: {fileID: 9068693735804318032}
+  - component: {fileID: 7014452311410972489}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -155,7 +156,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isExplored: 0
   parentWaypoint: {fileID: 0}
-  exploredColour: {r: 0, g: 0, b: 0, a: 0}
+  isPlaceable: 1
+  isTowerPlaced: 0
+--- !u!65 &7014452311410972489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681130488264992081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: -5, z: 0}
 --- !u!1 &6708361968702899858
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Friendly
       objectReference: {fileID: 0}
+    - target: {fileID: 1457945536329988, guid: f27a4597efbf3694b95687e7aeef7fcc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4501762900964862, guid: f27a4597efbf3694b95687e7aeef7fcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -316,6 +335,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 23395027866721958, guid: f27a4597efbf3694b95687e7aeef7fcc,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23395027866721958, guid: f27a4597efbf3694b95687e7aeef7fcc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c5229e2776380d4380346aa37ea8d46, type: 2}
+    - target: {fileID: 23395027866721958, guid: f27a4597efbf3694b95687e7aeef7fcc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c5229e2776380d4380346aa37ea8d46, type: 2}
+    - target: {fileID: 33946681911427330, guid: f27a4597efbf3694b95687e7aeef7fcc,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 427fe1209357f594e908fbc42cb22d3d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f27a4597efbf3694b95687e7aeef7fcc, type: 3}
 --- !u!4 &1829719038460742277 stripped
